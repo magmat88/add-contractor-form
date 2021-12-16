@@ -1,0 +1,55 @@
+@import '../../styles/mixins/mixins.scss';
+@import '../../styles/placeholders/placeholders.scss';
+@import '../../styles/variables/variables.scss';
+
+
+////////////////
+.img-preview {
+    height: 200px;
+    max-height: 100%;
+    width: 200px;
+    max-width: 100%;
+    object-fit: cover;
+}
+
+.img-preview-container {
+    height: 200px;
+    width: 200px;
+}
+
+label {
+    margin: 10px;
+}
+///////////////
+.form-container {
+    @extend %columnCentered;
+    @extend %paletteLight;
+    @extend %paddingMedium;
+    position: relative;
+    width: 100%;
+}
+
+.form-header {
+    @extend %paddingZero;
+    @extend %paletteLight;
+    @extend %columnSpaceBetween;
+    margin: 120px 0 30px 0;
+    width: 90%;
+}
+
+.form-section {
+    label {
+        @extend %columnSpaceBetween;
+        @extend %marginStandard;
+        width: 100%;
+        font-weight: bold;
+    }
+
+    input,
+    select {
+        @extend %paddingStandard;
+        @extend %marginStandard;
+        width: 100%;
+
+    }
+}

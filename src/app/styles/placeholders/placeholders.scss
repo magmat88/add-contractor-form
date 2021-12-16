@@ -1,0 +1,53 @@
+@import '../../styles/mixins/mixins.scss';
+@import '../../styles/variables/variables.scss';
+
+%columnCentered {
+    @include setFlexDisplay(column, center, center);
+};
+%columnSpaceBetween {
+    @include setFlexDisplay(column, space-between, space-between);
+}
+%rowCentered {
+    @include setFlexDisplay(row, center, center);
+};
+%rowLeft {
+    @include setFlexDisplay(row, flex-start, flex-start);
+};
+%rowRight {
+    @include setFlexDisplay(row, flex-end, flex-end);
+};
+%rowSpaceBetween {
+    @include setFlexDisplay(row, center, space-between);
+}
+
+%marginMedium {
+    margin: 15px;
+}
+%marginSmall {
+    margin: 5px;
+}
+%marginStandard {
+    margin: 10px;
+}
+
+%paddingMedium {
+    padding: 15px;
+}
+%paddingSmall {
+    padding: 15px;
+}
+%paddingStandard {
+    padding: 10px;
+}
+%paddingZero {
+    padding: 0;
+}
+
+%paletteDark {
+    background-color: $color_background-dark;
+    color: $color_text-light;
+}
+%paletteLight {
+    background-color: $color_background-light;
+    color: $color_text-dark;
+}

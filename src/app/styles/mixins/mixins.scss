@@ -1,0 +1,12 @@
+@mixin forLargeScreens($breakpointMedium) {
+  @media only screen and (min-width: $breakpointMedium) {
+    @content;
+  }
+}
+
+@mixin setFlexDisplay($direction, $align, $justify) {
+    align-items: $align;
+    display: flex;
+    flex-direction: $direction;
+    justify-content: $justify;
+  }

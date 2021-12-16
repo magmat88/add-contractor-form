@@ -1,0 +1,23 @@
+@import '../../styles/mixins/mixins.scss';
+@import '../../styles/placeholders/placeholders.scss';
+@import '../../styles/variables/variables.scss';
+
+.description-container,
+.name-container {
+    @extend %rowCentered;
+}
+
+.header-container {
+    @extend %columnCentered;
+    @extend %paddingMedium;
+    @extend %paletteDark;
+    font-size: 0.9rem;
+    height: 100px;
+    position: fixed;
+    width: 100%;
+    z-index: 10;
+}
+
+h1 {
+    color: $color_text-contrast-light;
+}
