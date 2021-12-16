@@ -1,12 +1,12 @@
 # Info:
-* React w/ TypeScript based on Create React App
+* React and TypeScript based on Create React App
 
 # How to start:
 * Clone the repo
-* `cd fast-start`
+* `cd add-contractor-form`
 * `npm install`
 * `npm run start`
-* Enjoy app on localhost:3000 with proxy server running on (by default) localhost:5000
+* Enjoy app on localhost:3000
 
 # Getting Started with Create React App
 
