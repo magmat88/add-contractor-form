@@ -7,9 +7,9 @@ import './app.scss';
 function App() {
     return (
         <div>
-            <Header appName={'Add New Contractor Form'} appDescription={'Form with data validation and photo preview. Method on submit: POST.'} />
-            <Form formName={'Form'} />
-            <Footer aboutPage={'This page is made with React and TypeScript. Styled with SASS.'} author={'Magdalena Matusiak'} />
+            <Header appName={'Formularz dodawania kontrahenta'} appDescription={'Formularz z walidacją danych oraz podglądem zdjęcia.'} />
+            <Form formName={'Nowy kontrahent'} />
+            <Footer aboutPage={'Aplikacja stworzona z wykorzystaniem ReactJS oraz TypeScript. Style z wykorzystaniem SASS.'} author={'Magdalena Matusiak'} />
         </div>
     );
 }
