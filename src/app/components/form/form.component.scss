@@ -27,10 +27,22 @@
     width: 200px;
 }
 
-label {
-    font-weight: bold;
+.main-container {
+    @extend %columnCentered;
+    position: relative;
+    padding: 150px 0 30px 0;
 }
 
+button {
+    @extend %paletteDark;
+    @extend %paddingStandard;
+}
+
+button,
+input,
+select {
+    border-radius: 5px;
+}
 
 input,
 label,
@@ -40,8 +52,6 @@ select {
     @extend %paddingStandard;
 }
 
-.main-container {
-    @extend %columnCentered;
-    position: relative;
-    padding: 150px 0 30px 0;
+label {
+    font-weight: bold;
 }

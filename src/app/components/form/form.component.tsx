@@ -21,7 +21,8 @@ export function Form({ formName }: FormProps) {
     const [contractorType, setContractorType] = useState<ContractorType>(
         ContractorType.NATURAL_PERSON
     );
-    const [contractorIdentification, setContractorIdentification] = useState<string>('');
+    const [contractorIdentification, setContractorIdentification] =
+        useState<string>('');
     const [selectedPhoto, setSelectedPhoto] = useState<string>('');
 
     useEffect(() => {}, [contractorType, selectedPhoto]);
@@ -83,7 +84,11 @@ export function Form({ formName }: FormProps) {
                             type="text"
                             name="name"
                             placeholder="Wprowadź imię"
+                            minLength={2}
+                            maxLength={25}
+                            pattern="[a-zA-Z]+"
                             onChange={onChangeContractorName}
+                            required
                         />
                     </label>
                 </section>
@@ -95,7 +100,11 @@ export function Form({ formName }: FormProps) {
                             type="text"
                             name="surname"
                             placeholder="Wprowadź nazwisko"
+                            minLength={2}
+                            maxLength={25}
+                            pattern="[a-zA-Z]+"
                             onChange={onSetContractorSurname}
+                            required
                         />
                     </label>
                 </section>
@@ -107,6 +116,7 @@ export function Form({ formName }: FormProps) {
                             value={contractorType}
                             placeholder="Wybierz typ kontrahenta"
                             onChange={onChangeContractorType}
+                            required
                         >
                             <option value={ContractorType.NATURAL_PERSON}>
                                 {ContractorType.NATURAL_PERSON}
@@ -125,20 +135,19 @@ export function Form({ formName }: FormProps) {
                             type="text"
                             name={contractorIdentification}
                             placeholder={`Wprowadź ${identificationType}`}
-                            pattern="[0-9]+"
+                            pattern="^[0-9]*$"
                             minLength={
-                                identificationType! ===
-                                IdentificationType.NIP
+                                identificationType! === IdentificationType.NIP
                                     ? 10
                                     : 11
                             }
                             maxLength={
-                                identificationType! ===
-                                IdentificationType.NIP
+                                identificationType! === IdentificationType.NIP
                                     ? 10
                                     : 11
                             }
                             onChange={onChangeIdentification}
+                            required
                         />
                     </label>
                 </section>
@@ -152,8 +161,12 @@ export function Form({ formName }: FormProps) {
                             name="photo"
                             accept="image/jpg, image/jpeg"
                             onChange={onChangePhoto}
+                            required
                         />
                     </label>
+                </section>
+                <section className="form-section">
+                    <button>Zatwierdź</button>
                 </section>
             </form>
 
@@ -163,7 +176,9 @@ export function Form({ formName }: FormProps) {
                     <p>Imię: {contractorName}</p>
                     <p>Nazwisko: {contractorSurname}</p>
                     <p>Typ kontrahenta: {contractorType}</p>
-                    <p>{identificationType}: {contractorIdentification}</p>
+                    <p>
+                        {identificationType}: {contractorIdentification}
+                    </p>
                     <p>Zdjęcie:</p>
                 </div>
                 <div className="img-preview-container">
@@ -175,10 +190,6 @@ export function Form({ formName }: FormProps) {
                         />
                     )}
                 </div>
-            </div>
-
-            <div className="form-section">
-                <button>Zatwierdź</button>
             </div>
         </div>
     );
