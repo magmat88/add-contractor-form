@@ -2,36 +2,16 @@
 @import '../../styles/placeholders/placeholders.scss';
 @import '../../styles/variables/variables.scss';
 
-.form-container {
+.form-container,
+.form-header,
+.preview-container,
+.text-preview-container {
+    @extend %columnCentered;
     @extend %paletteLight;
     @extend %paddingMedium;
+    @extend %marginStandard;
     position: relative;
-    width: 50%;
-}
-
-.form-header {
-    @extend %paddingZero;
-    @extend %paletteLight;
-    @extend %columnSpaceBetween;
-    margin: 120px 0 30px 0;
-    width: 100%;
-}
-
-.form-section {
-    label {
-        @extend %rowCentered;
-        @extend %marginStandard;
-        width: 50%;
-        font-weight: bold;
-    }
-
-    input,
-    select {
-        @extend %paddingStandard;
-        @extend %marginStandard;
-        width: 50%;
-
-    }
+    width: 80%;
 }
 
 .img-preview {
@@ -47,10 +27,21 @@
     width: 200px;
 }
 
-.main-container {
-    @extend %rowSpaceBetween;
+label {
+    font-weight: bold;
 }
 
-.preview-container {
-    width: 50%;
+
+input,
+label,
+select {
+    @extend %columnCentered;
+    @extend %marginStandard;
+    @extend %paddingStandard;
+}
+
+.main-container {
+    @extend %columnCentered;
+    position: relative;
+    padding: 150px 0 30px 0;
 }
