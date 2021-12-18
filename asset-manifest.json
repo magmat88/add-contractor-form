@@ -1,8 +1,8 @@
 {
   "files": {
-    "main.css": "/add-contractor-form/static/css/main.0aa6a11d.chunk.css",
-    "main.js": "/add-contractor-form/static/js/main.835bcda6.chunk.js",
-    "main.js.map": "/add-contractor-form/static/js/main.835bcda6.chunk.js.map",
+    "main.css": "/add-contractor-form/static/css/main.ece72488.chunk.css",
+    "main.js": "/add-contractor-form/static/js/main.563d2e94.chunk.js",
+    "main.js.map": "/add-contractor-form/static/js/main.563d2e94.chunk.js.map",
     "runtime-main.js": "/add-contractor-form/static/js/runtime-main.2c1346d6.js",
     "runtime-main.js.map": "/add-contractor-form/static/js/runtime-main.2c1346d6.js.map",
     "static/js/2.7447d6df.chunk.js": "/add-contractor-form/static/js/2.7447d6df.chunk.js",
@@ -10,13 +10,13 @@
     "static/js/3.69a41436.chunk.js": "/add-contractor-form/static/js/3.69a41436.chunk.js",
     "static/js/3.69a41436.chunk.js.map": "/add-contractor-form/static/js/3.69a41436.chunk.js.map",
     "index.html": "/add-contractor-form/index.html",
-    "static/css/main.0aa6a11d.chunk.css.map": "/add-contractor-form/static/css/main.0aa6a11d.chunk.css.map",
+    "static/css/main.ece72488.chunk.css.map": "/add-contractor-form/static/css/main.ece72488.chunk.css.map",
     "static/js/2.7447d6df.chunk.js.LICENSE.txt": "/add-contractor-form/static/js/2.7447d6df.chunk.js.LICENSE.txt"
   },
   "entrypoints": [
     "static/js/runtime-main.2c1346d6.js",
     "static/js/2.7447d6df.chunk.js",
-    "static/css/main.0aa6a11d.chunk.css",
-    "static/js/main.835bcda6.chunk.js"
+    "static/css/main.ece72488.chunk.css",
+    "static/js/main.563d2e94.chunk.js"
   ]
 }
