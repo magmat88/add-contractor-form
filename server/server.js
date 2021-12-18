@@ -15,11 +15,6 @@ app.post('/Contractor/Save', (req, res) => {
     res.send('Nie znaleziono metody zapisu.');
 });
 
-app.post('/Contractor/Save', (req, res) => {
-    res.status(405);
-    res.send('Nie znaleziono metody zapisu.');
-});
-
 app.listen(port, () => {});
 
 //package.json: add in scripts: "server": "nodemon \"server/server.js\" --ignore client",
