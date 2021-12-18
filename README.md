@@ -1,6 +1,7 @@
 # Info:
 * React and TypeScript App based on Create React App.
-* Click to see App on Github Pages: https://magmat88.github.io/add-contractor-form/
+* Click to see how this form looks on Github Pages: https://magmat88.github.io/add-contractor-form/
+* Server works only locally.
 
 
 # How to start:
